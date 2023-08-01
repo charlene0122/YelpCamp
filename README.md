@@ -119,7 +119,7 @@ node app.js
 - **typescript** (^5.1.6):
   TypeScript is a superset of JavaScript that adds static typing to the language. It is used for development purposes to provide better code validation, type checking, and tooling support during the development process. The resulting TypeScript code is typically transpiled to standard JavaScript before deployment.
 
-These packages collectively provide the necessary functionality for building the YelpCamp application by Colt Steele. They handle various aspects such as data storage with MongoDB, user authentication, file uploads, API interactions, and more.
+These packages collectively provide the necessary functionality for building the YelpCamp application. They handle various aspects such as data storage with MongoDB, user authentication, file uploads, API interactions, and more.
 
 ## Contributions
 
