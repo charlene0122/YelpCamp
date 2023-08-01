@@ -58,16 +58,8 @@ Copy code
 
 ## Contributions
 
-Contributions to YelpCamp are welcome! If you encounter any bugs or have ideas for new features, feel free to open an issue or submit a pull request on Colt Steele's GitHub repository.
-
-## Credits
-
-YelpCamp is developed and maintained by Colt Steele. Special thanks to all the contributors who have helped improve the project.
-
-## License
-
-YelpCamp is open-source software licensed under the MIT License. See the `LICENSE` file for more details.
+Contributions to YelpCamp are welcome! If you encounter any bugs or have ideas for new features, feel free to open an issue or submit a pull request on this repository.
 
 ---
 
-Thank you for using YelpCamp by Colt Steele! We hope you have an amazing camping experience and enjoy connecting with other outdoor enthusiasts. If you have any questions or need assistance, please reach out to Colt Steele or refer to the project's documentation. Happy camping! 🏕️
+Thank you for using YelpCamp! We hope you have an amazing camping experience and enjoy connecting with other outdoor enthusiasts. If you have any questions or need assistance, please reach out to Colt Steele or refer to the project's documentation. Happy camping! 🏕️
