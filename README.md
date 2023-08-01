@@ -20,32 +20,22 @@ YelpCamp is a web application for campers and outdoor enthusiasts, created by Co
 
 ## Installation and Usage
 
-1. Clone the repository from Colt Steele's GitHub account.
-git clone https://github.com/coltsteele/yelpcamp.git
-
-css
-Copy code
-
+1. Clone the current repository.
 2. Navigate to the project directory.
+```
 cd yelpcamp
-
-arduino
-Copy code
-
+```
 3. Install the required dependencies using npm.
+```
 npm install
-
-sql
-Copy code
+```
 
 4. Set up the environment variables. You may need to create a `.env` file with the necessary configurations.
 
 5. Start the application.
+```
 node app.js
-
-vbnet
-Copy code
-
+```
 6. Open your web browser and go to `http://localhost:3000` to access YelpCamp.
 
 ## Technologies Used
