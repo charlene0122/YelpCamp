@@ -3,7 +3,8 @@
 YelpCamp is a web application for campers and outdoor enthusiasts, created by Colt Steele. It allows users to explore and share information about different campgrounds, view photos, and leave reviews. Whether you are an experienced camper or a newbie looking for the perfect spot, YelpCamp has got you covered!
 
 Try the final deployment out here!
--https://yelpcamp-lo3o.onrender.com/campgrounds
+
+https://yelpcamp-lo3o.onrender.com/campgrounds
 
 ## Features
 
