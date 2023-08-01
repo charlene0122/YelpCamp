@@ -7,6 +7,7 @@ const path=require('path');
 const mongoose=require('mongoose');
 const ejsMate=require('ejs-mate');
 const session=require('express-session');
+const MongoStore=require('connect-mongo');
 const flash=require('connect-flash');
 const ExpressError=require('./utils/ExpressError');
 const methodOverride=require('method-override');
@@ -21,8 +22,8 @@ const campgroundRoute=require('./routes/campgrounds');
 const reviewRoute=require('./routes/reviews');
 const userRoute=require('./routes/users');
 
-mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp');
-
+const dbUrl=process.env.DB_URL||'mongodb://127.0.0.1:27017/yelp-camp';
+mongoose.connect(dbUrl);
 const db=mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => {
@@ -39,9 +40,20 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
 
+const secret=process.env.SECRET||'thisshouldbeabettersecret!'
+
+const store=MongoStore.create({
+    mongoUrl: dbUrl,
+    touchAfter: 24*60*60,
+    crypto: {
+        secret
+    }
+});
+
 const sessionConfig={
+    store,
     name: 'session',
-    secret: 'somesecret',
+    secret,
     //secure: true,
     resave: false,
     saveUninitialized: true,
@@ -140,7 +152,8 @@ app.use((err, req, res, next) => {
     res.render('error', { err });
 })
 
-app.listen(3000, (req, res) => {
-    console.log('Serving on port 3000.');
+const port=process.env.Port||3000;
+app.listen(port, (req, res) => {
+    console.log(`Serving on port ${port}.`);
 })
 
